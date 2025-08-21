@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Product Card Challenge - ANSWER KEY</title>
+    <link rel="stylesheet" href="answer-key-styles.css">
+</head>
+<body>
+    <div class="instructions">
+        <h3>✅ ANSWER KEY - Complete Solution</h3>
+        <p><strong>This shows the completed product card with all Flexbox properties applied correctly.</strong></p>
+        <p>Use this to help students who are stuck or to verify their final results.</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=150" alt="Golden Gate Park">
+        
+        <div class="card-content">
+            <h3>Golden Gate Park</h3>
+            <p>A massive urban park spanning over 1,000 acres in San Francisco. Home to gardens, museums, lakes, and recreational activities for visitors of all ages.</p>
+            
+            <div class="card-footer">
+                <span class="price">Free Admission</span>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-breakdown">
+        <h3>🔧 Complete Solution Breakdown</h3>
+        
+        <h4>Step 1: Basic Card Layout (.product-card)</h4>
+        <p><code>display: flex;</code> - Makes the card a flex container</p>
+        <p><code>justify-content: space-between;</code> - Separates image and content</p>
+        <p><code>align-items: center;</code> - Centers content vertically (optional)</p>
+        
+        <h4>Step 1: Image Properties (img)</h4>
+        <p><code>flex: 0 0 150px;</code> - Don't grow, don't shrink, stay 150px wide</p>
+        
+        <h4>Step 1 & 2: Content Container (.card-content)</h4>
+        <p><code>flex-grow: 1;</code> - Takes up remaining horizontal space</p>
+        <p><code>display: flex;</code> - Makes content area a flex container</p>
+        <p><code>flex-direction: column;</code> - Stacks title, description, footer vertically</p>
+        
+        <h4>Step 2: Footer Layout (.card-footer)</h4>
+        <p><code>display: flex;</code> - Makes footer a flex container</p>
+        <p><code>justify-content: space-between;</code> - Admission info left, button right</p>
+        <p><code>align-items: center;</code> - Centers admission info and button vertically</p>
+        
+        <h4>Alternative Solutions Students Might Use:</h4>
+        <p>• <code>justify-content: flex-start;</code> on .product-card (image and content touching)</p>
+        <p>• <code>flex-direction: column;</code> on .product-card (stacked layout)</p>
+        <p>• <code>align-items: flex-start/flex-end;</code> for different vertical alignment</p>
+    </div>
+
+    <div class="solution-breakdown">
+        <h3>🎯 Teaching Points</h3>
+        <p><strong>Key Concepts Demonstrated:</strong></p>
+        <p>• Nested flex containers (card → content → footer)</p>
+        <p>• Main axis vs cross axis alignment</p>
+        <p>• Flex-grow for responsive sizing</p>
+        <p>• Fixed vs flexible item sizing</p>
+        <p>• Real-world component structure</p>
+        
+        <p><strong>Common Student Mistakes:</strong></p>
+        <p>• Forgetting <code>display: flex</code> on containers</p>
+        <p>• Confusing justify-content and align-items</p>
+        <p>• Not using flex-grow on content area</p>
+        <p>• Missing flex-direction: column on content</p>
+        <p>• Forgetting to center admission info and button in footer</p>
+    </div>
+</body>
+</html>
